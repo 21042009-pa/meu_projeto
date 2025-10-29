@@ -1,21 +1,157 @@
-table{
-    border: 2px solid black;
-    width: 500px;
-    border-spacing: 5px;
-    margin-left: auto;
-    margin-right: auto;
+table {
+  border: 2px solid black;
+  width: 500px;
+  border-spacing: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td {
-    text-align: center;
-    border: 1px solid black;
-    background-color: red;
-    padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: red;
+  padding: 10px;
 }
 
-th{
-    text-align: center;
-    border: 1px solid black;
-    background-color: yellow;
-    padding: 5px;
+th {
+  text-align: center;
+  border: 1px solid black;
+  background-color: yellow;
+  padding: 5px;
+}
+
+p {
+  /* O navegador tentará usar a 'Roboto'. Se não encontrar, tentará a 'Helvetica', depois a 'Arial', e por fim,
+qualquer fonte sem serifa disponível. */
+
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 16px; /* Padrão do navegador */
+}
+
+h1 {
+  font-size: 3rem;
+} /* Resultado: 48px (16 * 3) */
+
+p {
+  font-size: 1rem;
+} /* Resultado: 16px (16 * 1) */
+
+.pequeno {
+  font-size: 0.875rem;
+} /* Resultado: 14px (16 * 0.875) */
+
+a:visited {
+  color: #057212; /* Roxo para links já visitados */
+  text-decoration: none; /*para tirar o sublinhado*/
+}
+
+a:hover {
+  color: #5400b3;
+  text-decoration: none;
+}
+
+a:active {
+  color: red; /* Vermelho enquanto o link está sendo pressionado */
+
+  text-decoration: none;
+}
+
+.imagem-post {
+
+max-width: 100%;
+
+height: auto;
+
+display: block; /*transforma a imagem em bloco*/
+
+margin-bottom: 1rem; /* Usa rem para espaçamento consistente */
+
+border-radius: 8px; /* Cantos suavemente arredondados */
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+
+}
+
+.avatar {
+
+width: 100px;
+
+height: 100px;
+
+border-radius: 50%;
+
+border: 3px solid white;
+}
+
+ul {
+
+list-style-type: none; /* Remove os marcadores padrão */
+
+padding-left: 0;
+
+}
+
+ul li {
+
+padding: 0.5rem;
+
+border-bottom: 1px solid #eee;
+
+/* Linha separadora entre os itens */
+
+}
+
+ol {
+
+list-style-type: decimal-leading-zero; /* 01, 02, 03... */
+
+padding-left: 2rem;
+
+}
+
+table {
+
+width: 100%;
+
+border-collapse: collapse;
+
+margin-top: 1.5rem;
+
+}
+
+th, td {
+
+padding: 0.75rem; /* Usa rem para espaçamento */
+
+text-align: left;
+
+border-bottom: 1px solid #ddd;
+
+}
+
+th {
+
+background-color: #f2f2f2;
+
+font-weight: bold;
+
+}
+
+th {
+
+background-color: #f2f2f2;
+
+font-weight: bold;
+
+}
+
+/* Adicione esta regra ao CSS da tabela anterior */
+
+tbody tr:nth-child(even) {
+
+background-color: #f9f9f9; /* Um cinza muito claro para as linhas pares */
+
 }
