@@ -1,0 +1,14 @@
+/* Reset universal do Box Model */
+* {
+box-sizing: border-box; /*respeito entre as caixas*/
+margin: 0;
+padding: 0;
+}
+
+.sidebar {
+border: 2px solid #100f0f71;
+padding: 10px;
+margin-bottom: 20px;
+float: right;
+margin-right: 15px;
+}
